@@ -1,0 +1,168 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+
+    .name {
+        font-family: Poppins;
+        font-weight: bolder;
+    }
+
+    .information-section {
+        margin-bottom: 2%;
+    }
+
+    .who-we-are {
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 1em;
+    }
+
+    .information {
+        font-family: Poppins;
+        font-size: 1.1em;
+        margin-top: 4%;
+    }
+
+    header {
+        font-family: 'PT Serif', serif;
+    }
+
+    img {
+        width: 35vw;
+    }
+
+    .wrapper span {
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .wrapper {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+    .product-owner,
+    .art-director,
+    .tech-lead,
+    .ux-designer,
+    .griff-developer,
+    .stan-developer {
+        position: relative;
+        width: 90%;
+    }
+
+    .art-director,
+    .stan-developer,
+    .ux-designer {
+        margin-top: 45%;
+    }
+
+    .name {
+        font-family: Poppins;
+        font-weight: bold;
+        width: 10em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+        width: 100vw;
+        margin-top: 20%;
+        margin-bottom: 5%;
+        color: #888888;
+    }
+
+    /*............................ Desktop view.................. */
+    @media (min-width:700px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 65vw;
+            margin: 10% 20% 3% 15%;
+        }
+
+        .information-section {
+            width: 30vw;
+            align-self: flex-end;
+            margin-top: -4.5em;
+        }
+
+        .information {
+            align-self: flex-end;
+            font-family: Poppins;
+            font-size: 1.3em;
+            margin-top: 10%;
+        }
+
+        img {
+            width: 90%;
+        }
+
+        .product-owner,
+        .art-director,
+        .tech-lead,
+        .ux-designer,
+        .griff-developer,
+        .stan-developer {
+            position: relative;
+        }
+
+        .art-director {
+            margin-top: 40%;
+        }
+
+        .griff-developer {
+            margin-top: 30%;
+        }
+
+        .ux-designer,
+        .stan-developer {
+            margin-top: -8%;
+        }
+
+        .wrapper {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 200vh;
+            margin-left: 15%;
+            width: 66.3vw;
+            margin-top: 6%;
+        }
+
+        .wrapper>div {
+            width: 19vw;
+        }
+
+        .name {
+            font-family: Poppins;
+            font-weight: bold;
+            width: 10vw;
+        }
+
+        .wrapper span {
+            writing-mode: vertical-rl;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            color: #888888;
+            margin-top: 5%;
+            margin-bottom: 0;
+        }
+    }
